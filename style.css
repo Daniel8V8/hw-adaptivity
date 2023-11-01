@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  background-image: url(images/3d-halloween-background-with-spooky-castle.jpg);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: backgroundAnimation 5s infinite ease-in-out;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background-color: #029db94f;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #02020273;
+  border-radius: 10px;
+}
+h1 {
+  font-family: "halloween_spookyregular";
+  color: #ff3300;
+  font-size: 100px;
+  text-align: center;
+  margin: 3%;
+}
+
+h3 {
+  font-family: "halloween_spookyregular";
+  color: rgb(255, 241, 215);
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  line-height: 2%;
+}
+.top-text {
+  font-family: "halloween_dayregular";
+  font-weight: 100;
+  text-align: center;
+  color: rgb(255, 241, 215);
+  font-size: 32px;
+}
+
+h2 {
+  font-family: "halloween_dayregular";
+  font-weight: 100;
+  text-align: center;
+  color: orange;
+  font-size: 32px;
+}
+
+.banner img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "halloween_spookyregular";
+}
+
+.btn:hover {
+  background-color: #ff3300;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .top-text,
+  h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
