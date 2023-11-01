@@ -92,6 +92,9 @@ h2 {
   background-color: #ff3300;
 }
 @media screen and (max-width: 768px) {
+   body {
+    padding: 20px;
+  }
   .container {
     padding: 10px;
   }
